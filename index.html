@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <title>Resumen de AJAX</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>¿Qué es AJAX y cómo funciona?</h1>
+        <p>
+            AJAX significa JavaScript asíncrono y XML (Asynchronous JavaScript and XML). Es un conjunto de técnicas de
+            desarrollo web que permiten que las aplicaciones web funcionen de forma asíncrona, procesando cualquier
+            solicitud al servidor en segundo plano. Espera, ¿qué es AJAX de nuevo? Vamos a revisar cada término por
+            separado.
+        </p>
+        <p>
+            JavaScript es un lenguaje de programación muy conocido. Entre otras funciones, gestiona el contenido
+            dinámico de
+            un sitio web y permite la interacción dinámica del usuario. XML es otra variante de un lenguaje de marcado
+            como
+            <strong>HTML</strong>, como lo sugiere su nombre: eXtensible Markup Language. Mientras HTML está diseñado
+            para
+            mostrar datos, XML está diseñado para contener y transportar datos.
+        </p>
+        <p>
+            Tanto JavaScript como XML funcionan de forma asíncrona en AJAX. Como resultado, cualquier aplicación web que
+            use
+            AJAX puede enviar y recuperar datos del servidor sin la necesidad de volver a cargar toda la página.
+        </p>
+        <h2>¿Como funciona AJAX?</h2>
+        <p>
+            Ten en cuenta que AJAX no es una sola tecnología, ni es un lenguaje de programación. Como se dijo antes,
+            AJAX es
+            un conjunto de técnicas de desarrollo web. El sistema generalmente comprende:
+        </p>
+        <ul>
+            <li>
+                <strong>HTML/XHTML</strong> para el lenguaje principal y CSS para la presentación.
+            </li>
+            <li>
+                <strong>El Modelo de objetos del documento (DOM)</strong> para datos de visualización dinámicos y su
+                interacción.
+            </li>
+            <li>
+                <strong>XML</strong> para el intercambio de datos y XSLT para su manipulación. Muchos desarrolladores
+                han
+                comenzado a reemplazarlo por JSON porque es más similar a JavaScript en su forma.
+            </li>
+            <li>
+                El objeto <strong>XMLHttpRequest</strong> para la comunicación asíncrona.</li>
+            <li>
+                Finalmente, el lenguaje de programación <strong>JavaScript</strong> para unir todas estas tecnologías.
+            </li>
+        </ul>
+        <p>
+            Es necesario algún conocimiento técnico para entenderlo completamente. Sin embargo, el procedimiento general
+            de
+            cómo funciona AJAX es bastante simple. Dale un vistazo al diagrama y la tabla siguientes para mayor
+            explicación.
+        </p>
+
+        <h3>Diagrama:</h3>
+        <img src="./assert/ajax-diagram.webp" width="500px" alt="diagrama">
+
+        <h3>Tabla Explicatoria:</h3>
+        <table class="container-table">
+            <thead>
+                <tr>
+                    <th>Modelo Convencional</th>
+                    <th>Modelo AJAX</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ol>
+                            <li>
+                                Se envía una solicitud HTTP desde el navegador web al servidor.
+                            </li>
+                            <li>
+                                El servidor recibe y, posteriormente, recupera los datos.
+                            </li>
+                            <li>
+                                El servidor envía los datos solicitados al navegador web.
+                            </li>
+                            <li>
+                                El navegador web recibe los datos y vuelve a cargar la página para que aparezcan los
+                                datos.
+                            </li>
+                        </ol>
+                    </td>
+                    <td>
+                        <ol>
+                            <li>
+                                El navegador crea una llamada de JavaScript que luego activará XMLHttpRequest.
+                            </li>
+                            <li>
+                                En segundo plano, el navegador web crea una solicitud HTTP al servidor.
+                            </li>
+                            <li>
+                                El servidor recibe, recupera y envía los datos al navegador web.
+                            </li>
+                            <li>
+                                El navegador web recibe los datos solicitados que aparecerán directamente en la página.
+                                No
+                                se necesita recargar.
+                            </li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Durante este proceso, los usuarios no tienen más remedio que esperar hasta que se complete todo
+                        el
+                        proceso. No solo consume mucho tiempo, sino que también supone una carga innecesaria en el
+                        servidor.
+                    </td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Ejemplos de uso cotidianos</h2>
+
+        <h3>Sistemas de votación y calificación</h3>
+        <p>
+            ¿Alguna vez has calificado un producto que compraste online? ¿Alguna vez has llenado un formulario de
+            votación
+            en línea? De cualquier manera, ambas operaciones usan AJAX. Una vez que haces clic en el botón de
+            calificación o
+            de votación, el sitio web actualizará el cálculo pero la página completa permanecerá sin cambios.
+        </p>
+
+        <h3>Salas de chat</h3>
+        <p>
+            Algunos sitios web tienen un chat incorporado en su página principal, mediante el cual puedes hablar con un
+            agente de atención al cliente. No tienes que preocuparte si quieres explorar la página al mismo tiempo. AJAX
+            no
+            volverá a cargar la página cada vez que envíes y recibas un mensaje nuevo.
+        </p>
+
+        <h3>Notificación de tendencias de Twitter</h3>
+        <p>
+            Twitter ha incorporado AJAX recientemente para sus actualizaciones. Cada vez que se crean nuevos tweets
+            sobre
+            ciertos temas de tendencia, Twitter actualizará las nuevas cifras sin afectar la página principal.
+        </p>
+
+        <p>
+            En pocas palabras, AJAX hace que las funciones multitarea sean fáciles. Si alguna vez observas una situación
+            similar en la que dos operaciones funcionan simultáneamente, con una en ejecución y la otra inactiva, es
+            posible
+            que sea AJAX en acción.
+        </p>
+    </div>
+</body>
+
+</html>

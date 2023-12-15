@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(59, 149, 233, 0.795);
+    border-radius: 10px;
+}
+
+.container-table {
+    background-color: rgba(187, 202, 215, 0.795);
+    border-radius: 10px;
+    width: 800px;
+}
